@@ -35,44 +35,46 @@ Before running the project, ensure you have the following installed on your syst
 ### Backend (Python)
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/client-financial-assistant.git
+   bash
+   git clone  https://github.com/darmad78/financialMongoDBVertexAiBot/edit/main/README.md
    cd client-financial-assistant
 
-	2.	Install the required Python packages:
+2.	Install the required Python packages:
 
-pip install -r requirements.txt
-
-
-	3.	Set up your environment variables for MongoDB and Google Cloud:
-	•	MONGO_URI: Connection string for MongoDB.
-	•	PROJECT_ID: Your Google Cloud project ID.
-	•	REGION: Google Cloud region.
-	•	YOUR_GEMINI_API_KEY: Your API key for Vertex AI.
-	4.	Run the backend server:
-
-uvicorn main:app --reload
+	pip install -r requirements.txt
 
 
-	5.	The server should be running on http://127.0.0.1:8000.
+3.	Set up your environment variables for MongoDB and Google Cloud in the .env file:
+	• MONGO_URI: Connection string for MongoDB.
+	• PROJECT_ID: Your Google Cloud project ID.
+	• REGION: Google Cloud region.
+	• YOUR_GEMINI_API_KEY: Your API key for Vertex AI.
 
-Frontend (React)
-	1.	Navigate to the frontend directory:
+4.	Run the backend server:
 
-cd client-financial-assistant/frontend
+	uvicorn backend.app.main:app --reload                               
 
+5.	The server should be running on http://127.0.0.1:8000.
 
-	2.	Install the required Node.js dependencies:
+	
+ Frontend (React)
 
-npm install
+1.	Navigate to the frontend directory:
 
-
-	3.	Start the frontend development server:
-
-npm start
+	cd client-financial-assistant/frontend
 
 
-	4.	The frontend should be running on http://localhost:3000.
+2.	Install the required Node.js dependencies:
+
+	npm install
+
+
+3.	Start the frontend development server:
+
+	npm start
+
+
+4.	The frontend should be running on http://localhost:3000.
 
 How to Use
 
@@ -84,7 +86,7 @@ Click the “Load Data into MongoDB” button in the app to generate and load sy
 
 Enter a question in the text input and press “Send”. The assistant will use the data in the MongoDB database to provide an answer, powered by Google Vertex AI. You can ask questions like:
 	•	“What is the portfolio allocation for this client?”
-	•	“How much has the client spent on groceries?”
+	•	“Find the 5 most common stocks held by the investors listed”
 
 3. Toggle Data Visibility
 
