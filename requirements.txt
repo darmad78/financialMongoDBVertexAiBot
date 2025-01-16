@@ -1,0 +1,5 @@
+google-cloud-aiplatform
+google-cloud-storage
+tensorflow  # or torch, depending on your choice of ML framework
+pandas
+scikit-learn
