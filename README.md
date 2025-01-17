@@ -1,5 +1,7 @@
 # financialMongoDBVertexAiBot
 Here’s a README.md template for your GitHub project that outlines the key features of your project, instructions for setup, and how to use the files you’ve provided:
+<img width="850" alt="Screenshot 2025-01-17 at 14 52 56" src="https://github.com/user-attachments/assets/d1d29f31-03b5-400f-925b-5dcd06f4bffb" />
+
 
 # Client Financial Assistant
 
